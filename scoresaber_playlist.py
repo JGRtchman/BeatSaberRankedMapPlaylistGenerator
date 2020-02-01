@@ -3,7 +3,6 @@ import json,requests
 url = 'https://raw.githubusercontent.com/andruzzzhka/BeatSaberScrappedData/master/scoreSaberScrappedData.json'
 template = {'playlistTitle':None,'playlistAuthor':'ScoreSaber','songs':{}}
 
-
 temp = {0:{},1:{},2:{},3:{},4:{},5:{},6:{},7:{},8:{},9:{},10:{}}
 try:
     r = requests.get(url)
@@ -16,7 +15,6 @@ try:
                     temp[i][x] = songs_dict[x]
 
     songs = []
-
 
     for x in temp:
         songs.append([])
